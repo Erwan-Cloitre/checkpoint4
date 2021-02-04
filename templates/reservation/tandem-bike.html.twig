@@ -43,7 +43,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        {{ form_start(reservation) }}
+                                        {{ form_start(reservation, {'attr':{'class': 'form_reservation'}}) }}
                                         {{ form_row(reservation.lastname, {'attr':{'placeholder': 'Nom'}}) }}
                                         {{ form_row(reservation.country, {'attr':{'placeholder': 'Pays'}}) }}
                                         {{ form_row(reservation.email, {'attr':{'placeholder': 'Adresse email'}}) }}

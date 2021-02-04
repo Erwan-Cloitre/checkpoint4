@@ -39,3 +39,17 @@
     margin-bottom: 1vw;
     margin-left: 30vw;
 }
+
+.form_reservation{
+    margin-left: 2vw;
+}
+
+#reservation_reservation_date{
+    float: right;
+    display: inline-flex;
+}
+
+.form_reservation input{
+    float: right;
+    margin-right: 1vw;
+}
