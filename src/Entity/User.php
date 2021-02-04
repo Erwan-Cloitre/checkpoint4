@@ -46,7 +46,7 @@ class User implements UserInterface
     private $firstname;
 
     /**
-     * @ORM\Column(type="json", nullable=true)
+     * @ORM\Column(type="array", nullable=true)
      */
     private $roles = [];
 
@@ -122,6 +122,6 @@ class User implements UserInterface
 
     public function getUsername()
     {
-        // TODO: Implement getUsername() method.
+        return $this->getFirstname();
     }
 }
