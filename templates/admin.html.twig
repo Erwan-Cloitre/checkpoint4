@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+<ul class="ul_admin">
+    <li class="li_admin"><a class="active" href="/admin">Dashboard</a></li>
+    <li class="li_admin"><a href="/reservation">Réservations</a></li>
+    <li class="li_admin"><a href="/messages">Messages</a></li>
+    <li class="li_admin"><a href="/inscription">Nouvel admin</a></li>
+    <li class="li_admin"><a href="/user">Gérer les admins</a></li>
+    <li class="li_admin"><a href="/">Home</a></li>
+    <li class="li_admin"><a href="/logout">Logout</a></li>
+</ul>
+{% block body %}{% endblock %}
+<footer>
+    <div class="row" style="background: black; width: 100%; margin: 0">
+        <div class="col-6"></div>
+        <div class="col-6">
+        <p style="font-size: 1vw; color: white; padding-top: 20px; padding-right: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec posuere luctus quam, ac dignissim elit consectetur at. Sed commodo nibh et
+            odio cursus commodo. Aliquam accumsan, arcu nec rhoncus tempor, lectus velit mattis
+            ipsum, et tempus nunc nulla tincidunt metus. Phasellus vel hendrerit urna. Nullam
+            ultrices, nunc ut volutpat pretium, ex lectus semper nunc, vitae dapibus enim sem
+            non eros. Praesent in facilisis nibh.
+        </p>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

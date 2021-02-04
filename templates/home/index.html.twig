@@ -3,94 +3,289 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-<div style="width: 100%; height: 20vw; background: #999999">
-  <h1 class="title_home" style="padding-top: 5vw">DÉCOUVREZ STRASBOURG</h1>
+<div style="width: 100%; height: 35vw; background-color: rgb(237, 237, 237)">
+  <h1 class="title_home" style="padding-top: 15vw">DÉCOUVREZ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;STRASBOURG</h1>
+    <img style="width: 15%;position: absolute;left: 41vw;top: 13vw" src="{{ asset('build/velologo.png') }}">
   <h1 class="title_home">À VOTRE PROPRE RYTHME !</h1>
 </div>
  <div class="row">
   <div style="font-size: 2vw; padding: 10px 20px; text-align: justify" class="col-6">
-   <p style="margin: 0;padding-left: 20px; padding-top: 10px">
+   <p style="margin: 0;padding: 2vw">
     Louez un vélo à Strasbourg et explorez toutes les options que la ville vous offre.
     Parcs calmes, restaurants multiculturels ou vie nocturne trépidante,
     vous décidez de ce que vous voulez faire et quand. Sur votre vélo,
-    vous pouvez sentir les ambiances des différents quartiers de la ville : du chic Mitte, au calme Prenzlauerberg,
-    en passant par le multiculturel Kreuzberg, vous pouvez aller de l’un à l’autre plus facilement.
-    Les Berlinois aiment le vélo, et si vous aussi, nous avons ce qu’il vous faut.
+    vous pouvez sentir les ambiances des différents quartiers de la ville.
    </p>
   </div>
   <div class="col-6" style="padding-right: 0">
     <img style="width: 100%" src="{{ asset('build/velo.jpg') }}">
   </div>
  </div>
- <div class="row" style="background: white; padding-left: 100px">
-    <div class="col-4" style="background: white">
+ <div class="row" style="background-color: rgb(237, 237, 237); padding-left: 100px;padding-top: 5vw">
+    <div class="col-4" style="background: rgb(237, 237, 237)">
         <img style="width: 80%" src="{{ asset('build/dutch-bike-1.png') }}">
-        <h1>Vélo néerlandais</h1>
-        <p>(frein à rétropédalage)</p>
-        <img style="width: 60%" src="{{ asset('build/velologo.png') }}">
-        <div class="row">
-            <div class="col-5"><p>3 heures</p></div>
-            <div class="col-5"><p>7,00€</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>24 heures</p></div>
-            <div class="col-5"><p>9,50€</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>1/2 journée supplémenaire</p></div>
-            <div class="col-5"><p>5,00€</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>Journée supplémenaire</p></div>
-            <div class="col-5"><p>7,25€</p></div>
+        <div style="padding-left: 2vw">
+            <h1>Dutch bike</h1>
+            <p>(frein à rétropédalage)</p>
+            <div style="padding-left: 1vw">
+                <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                <div class="row">
+                    <div class="col-5"><p>3 heures</p></div>
+                    <div class="col-5"><p>7,00€</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>24 heures</p></div>
+                    <div class="col-5"><p>9,50€</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                    <div class="col-5"><p>5,00€</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>Journée supplémenaire</p></div>
+                    <div class="col-5"><p>7,25€</p></div>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 2.3vw">
+                <a href="/dutch-bike"><button>Plus d'informations !</button></a>
+            </div>
         </div>
     </div>
-    <div class="col-4" style="background: white">
+    <div class="col-4" style="background: rgb(237, 237, 237)">
         <img style="width: 80%" src="{{ asset('build/city-bike-1.png') }}">
-        <h1>Vélo de ville</h1>
-        <p>(frein à main et 3 vitesses)</p>
-        <img style="width: 60%" src="{{ asset('build/velologo.png') }}">
-        <div class="row">
-            <div class="col-5"><p>3 heures</p></div>
-            <div class="col-5"><p>10,25€</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>24 heures</p></div>
-            <div class="col-5"><p>14,00€</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>1/2 journée supplémenaire</p></div>
-            <div class="col-5"><p>7,25€</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>Journée supplémenaire</p></div>
-            <div class="col-5"><p>10,50€</p></div>
+        <div style="padding-left: 3vw">
+            <h1>City bike</h1>
+            <p>(frein à main et 3 vitesses)</p>
+            <div style="padding-left: 1vw">
+                <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                <div class="row">
+                    <div class="col-5"><p>3 heures</p></div>
+                    <div class="col-5"><p>10,25€</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>24 heures</p></div>
+                    <div class="col-5"><p>14,00€</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                    <div class="col-5"><p>7,25€</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>Journée supplémenaire</p></div>
+                    <div class="col-5"><p>10,50€</p></div>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 2.3vw">
+                <a href="/city-bike"><button>Plus d'informations !</button></a>
+            </div>
         </div>
     </div>
-    <div class="col-4" style="background: white">
+    <div class="col-4" style="background: rgb(237, 237, 237)">
         <img style="width: 80%" src="{{ asset('build/tandem-1.png') }}">
+        <div style="padding-left: 3vw">
         <h1>Vélo tandem</h1>
         <p>(frein à main)</p>
-        <img style="width: 60%" src="{{ asset('build/velologo.png') }}">
-        <div class="row">
-            <div class="col-5"><p>3 heures</p></div>
-            <div class="col-5"><p>20,50 €</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>24 heures</p></div>
-            <div class="col-5"><p>28,00 €</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>1/2 journée supplémenaire</p></div>
-            <div class="col-5"><p>14,50 €</p></div>
-        </div>
-        <div class="row">
-            <div class="col-5"><p>Journée supplémenaire</p></div>
-            <div class="col-5"><p>21,00 €</p></div>
-        </div>
-        <div class="row">
-            <a href="/tandem-bike"><button>Plus d'informations !</button></a>
+            <div style="padding-left: 1vw">
+                <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                <div class="row">
+                    <div class="col-5"><p>3 heures</p></div>
+                    <div class="col-5"><p>20,50 €</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>24 heures</p></div>
+                    <div class="col-5"><p>28,00 €</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                    <div class="col-5"><p>14,50 €</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-5"><p>Journée supplémenaire</p></div>
+                    <div class="col-5"><p>21,00 €</p></div>
+                </div>
+            </div>
+            <div class="row" style="padding-left: 2.3vw">
+                <a href="/tandem-bike"><button>Plus d'informations !</button></a>
+            </div>
         </div>
     </div>
  </div>
+    <div class="row" style="background-color: rgb(237, 237, 237); padding-left: 100px;padding-top: 5vw">
+        <div class="col-4" style="background: rgb(237, 237, 237)">
+            <img style="width: 80%" src="{{ asset('build/kids-bike-1.png') }}">
+            <div style="padding-left: 2vw">
+                <h1>Kids bike</h1>
+                <p>(frein à main et 3 vitesses)</p>
+                <div style="padding-left: 1vw">
+                    <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                    <div class="row">
+                        <div class="col-5"><p>3 heures</p></div>
+                        <div class="col-5"><p>7,00€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>24 heures</p></div>
+                        <div class="col-5"><p>9,50€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                        <div class="col-5"><p>5,00€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>Journée supplémenaire</p></div>
+                        <div class="col-5"><p>7,25€</p></div>
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 2.3vw">
+                    <a href="/dutch-bike"><button>Plus d'informations !</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="background: rgb(237, 237, 237)">
+            <img style="width: 80%" src="{{ asset('build/hybrid-bike-1.png') }}">
+            <div style="padding-left: 3vw">
+                <h1>Hybrid bike</h1>
+                <p>(27 vitesses)</p>
+                <div style="padding-left: 1vw">
+                    <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                    <div class="row">
+                        <div class="col-5"><p>3 heures</p></div>
+                        <div class="col-5"><p>10,25€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>24 heures</p></div>
+                        <div class="col-5"><p>14,00€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                        <div class="col-5"><p>7,25€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>Journée supplémenaire</p></div>
+                        <div class="col-5"><p>10,50€</p></div>
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 2.3vw">
+                    <a href="/city-bike"><button>Plus d'informations !</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="background: rgb(237, 237, 237)">
+            <img style="width: 80%" src="{{ asset('build/e-bike-1.png') }}">
+            <div style="padding-left: 3vw">
+                <h1>E-bike</h1>
+                <p>(7 vitesses)</p>
+                <div style="padding-left: 1vw">
+                    <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                    <div class="row">
+                        <div class="col-5"><p>3 heures</p></div>
+                        <div class="col-5"><p>20,50 €</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>24 heures</p></div>
+                        <div class="col-5"><p>28,00 €</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                        <div class="col-5"><p>14,50 €</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>Journée supplémenaire</p></div>
+                        <div class="col-5"><p>21,00 €</p></div>
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 2.3vw">
+                    <a href="/tandem-bike"><button>Plus d'informations !</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: rgb(237, 237, 237); padding-left: 100px;padding-top: 5vw">
+        <div class="col-4" style="background: rgb(237, 237, 237)">
+            <img style="width: 80%" src="{{ asset('build/kids-tandem-1.png') }}">
+            <div style="padding-left: 2vw">
+                <h1>Kids tandem</h1>
+                <p>(3 vitesses)</p>
+                <div style="padding-left: 1vw">
+                    <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                    <div class="row">
+                        <div class="col-5"><p>3 heures</p></div>
+                        <div class="col-5"><p>7,00€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>24 heures</p></div>
+                        <div class="col-5"><p>9,50€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                        <div class="col-5"><p>5,00€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>Journée supplémenaire</p></div>
+                        <div class="col-5"><p>7,25€</p></div>
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 2.3vw">
+                    <a href="/dutch-bike"><button>Plus d'informations !</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="background: rgb(237, 237, 237)">
+            <img style="width: 80%" src="{{ asset('build/kids-child-seat-1.png') }}">
+            <div style="padding-left: 3vw">
+                <h1>Kids child seat</h1>
+                <p>(frein à main et 3 vitesses)</p>
+                <div style="padding-left: 1vw">
+                    <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                    <div class="row">
+                        <div class="col-5"><p>3 heures</p></div>
+                        <div class="col-5"><p>10,25€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>24 heures</p></div>
+                        <div class="col-5"><p>14,00€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                        <div class="col-5"><p>7,25€</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>Journée supplémenaire</p></div>
+                        <div class="col-5"><p>10,50€</p></div>
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 2.3vw">
+                    <a href="/city-bike"><button>Plus d'informations !</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4" style="background: rgb(237, 237, 237)">
+            <img style="width: 80%" src="{{ asset('build/kids-cargo-1.png') }}">
+            <div style="padding-left: 3vw">
+                <h1>Kids cargo</h1>
+                <p>(7 vitesses)</p>
+                <div style="padding-left: 1vw">
+                    <img style="width: 60%;padding: 1vw 0" src="{{ asset('build/velologo.png') }}">
+                    <div class="row">
+                        <div class="col-5"><p>3 heures</p></div>
+                        <div class="col-5"><p>20,50 €</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>24 heures</p></div>
+                        <div class="col-5"><p>28,00 €</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>1/2 journée supplémenaire</p></div>
+                        <div class="col-5"><p>14,50 €</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"><p>Journée supplémenaire</p></div>
+                        <div class="col-5"><p>21,00 €</p></div>
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 2.3vw">
+                    <a href="/tandem-bike"><button>Plus d'informations !</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

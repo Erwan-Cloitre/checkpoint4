@@ -3,8 +3,8 @@
 {% block title %}Vélo tandem{% endblock %}
 
 {% block body %}
-    <div style="background: #B0413E;text-align: center">
-        <h1 style="margin: 0;padding: 20px 0px">Vélo tandem</h1>
+    <div style="background-color: rgb(237, 237, 237);text-align: center">
+        <h1 style="margin: 0;padding-top: 100px;height: 170px">Tandem bike</h1>
     </div>
     <div style="background: white">
         <div class="row">
@@ -12,8 +12,9 @@
                 <img style="width: 100%" src="{{ asset('build/tandem-1.png') }}">
             </div>
             <div class="col-6">
-                <div style="position: absolute; left: 15vw; top: 5vw;margin-bottom: 10vw;width: 80%">
-                    <img style="width: 50%" src="{{ asset('build/velologo.png') }}">
+                <div style="position: absolute; left: 15vw; top: 4vw;margin-bottom: 10vw;width: 80%">
+                    <img style="width: 60%;padding-bottom: 2vw" src="{{ asset('build/velologo.png') }}">
+                    <div style="padding-left: 2vw">
                     <div class="row">
                         <div class="col-5"><p>3 heures</p></div>
                         <div class="col-5"><p>20,50 €</p></div>
@@ -30,13 +31,13 @@
                         <div class="col-5"><p>Journée supplémenaire</p></div>
                         <div class="col-5"><p>21,00 €</p></div>
                     </div>
-                    <div class="row">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Réserver !</button>
+                    <div class="row" style="padding-left: 1vw">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Réserver !</button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Formulaire de réservation</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -48,7 +49,7 @@
                                         {{ form_row(reservation.email, {'attr':{'placeholder': 'Adresse email'}}) }}
                                         {{ form_row(reservation.mobile_number, {'attr':{'placeholder': 'Numéro mobile'}}) }}
                                         {{ form_row(reservation.reservation_date) }}
-                                        {{ form_row(reservation.explanation, {'attr':{'placeholder': 'Explication'}}) }}
+                                        {{ form_row(reservation.explanation, {'attr':{'placeholder': 'Détails de réservation'}}) }}
                                         {{ form_row(reservation.dutch_bike, {'attr':{'value': '0'}}) }}
                                         {{ form_row(reservation.city_bike, {'attr':{'value': '0'}}) }}
                                         {{ form_row(reservation.e_bike, {'attr':{'value': '0'}}) }}
@@ -70,19 +71,20 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row" style="background: #B0413E">
+    <div class="row" style="background-color: rgb(237, 237, 237);padding: 2vw 2vw">
         <div class="col-6">
-            <h2>À propos du vélo tandem</h2>
+            <h2>À propos du tandem bike</h2>
             <p>Nous avons des tandems urbains sans engrenages et
                 des tandems avec engrenages pour les longues distances.
                 Nos tandems sont neufs et de la plus haute qualité.
                 Consultez également notre Tandem pour enfants .
             </p>
         </div>
-        <div class="col-6">
+        <div class="col-6" style="margin-top: 2.7vw">
             <p>Nos vélos sont de qualité supérieure et en excellent état.
                 Ils sont livrés avec deux verrous et des sacoches et casques en option gratuitement.
                 Nous proposons également des cartes gratuites avec des itinéraires et sommes heureux

@@ -1,0 +1,65 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Reservation index{% endblock %}
+
+{% block body %}
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+        <h1>Liste des réservations</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Lastname</th>
+                <th>Country</th>
+                <th>Email</th>
+                <th>Mobile_number</th>
+                <th>Reservation_date</th>
+                <th>Explanation</th>
+                <th>Dutch_bike</th>
+                <th>City_bike</th>
+                <th>E_bike</th>
+                <th>Hybrid_bike</th>
+                <th>Tandem_bike</th>
+                <th>Touring_bike</th>
+                <th>Kids_bike</th>
+                <th>Kids_cargo</th>
+                <th>Kids_child_seat</th>
+                <th>Kids_tandem</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for reservation in reservations %}
+            <tr>
+                <td>{{ reservation.lastname }}</td>
+                <td>{{ reservation.country }}</td>
+                <td>{{ reservation.email }}</td>
+                <td>{{ reservation.mobileNumber }}</td>
+                <td>{{ reservation.reservationDate ? reservation.reservationDate|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ reservation.explanation }}</td>
+                <td>{{ reservation.dutchBike }}</td>
+                <td>{{ reservation.cityBike }}</td>
+                <td>{{ reservation.eBike }}</td>
+                <td>{{ reservation.hybridBike }}</td>
+                <td>{{ reservation.tandemBike }}</td>
+                <td>{{ reservation.touringBike }}</td>
+                <td>{{ reservation.kidsBike }}</td>
+                <td>{{ reservation.kidsCargo }}</td>
+                <td>{{ reservation.kidsChildSeat }}</td>
+                <td>{{ reservation.kidsTandem }}</td>
+                <td>
+                    <a href="{{ path('reservation_show', {'id': reservation.id}) }}">show</a>
+                    <a href="{{ path('reservation_edit', {'id': reservation.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="18">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('reservation_new') }}">Create new</a>
+</div>
+{% endblock %}

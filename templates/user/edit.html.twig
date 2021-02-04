@@ -1,0 +1,15 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Edit User{% endblock %}
+
+{% block body %}
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+    <h1 style=" margin-left: 20vw;margin-top: 10vw;margin-bottom: 3vw">Modifier les données de l'admin</h1>
+
+        {{ include('user/_form.html.twig', {'button_label': 'Update'}) }}
+
+        <a href="{{ path('user_index') }}">back to list</a>
+
+        {{ include('user/_delete_form.html.twig') }}
+</div>
+{% endblock %}

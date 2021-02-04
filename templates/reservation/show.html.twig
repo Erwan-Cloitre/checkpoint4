@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Reservation{% endblock %}
+
+{% block body %}
+    <h1>Reservation</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ reservation.id }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ reservation.lastname }}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{{ reservation.country }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ reservation.email }}</td>
+            </tr>
+            <tr>
+                <th>Mobile_number</th>
+                <td>{{ reservation.mobileNumber }}</td>
+            </tr>
+            <tr>
+                <th>Reservation_date</th>
+                <td>{{ reservation.reservationDate ? reservation.reservationDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Explanation</th>
+                <td>{{ reservation.explanation }}</td>
+            </tr>
+            <tr>
+                <th>Dutch_bike</th>
+                <td>{{ reservation.dutchBike }}</td>
+            </tr>
+            <tr>
+                <th>City_bike</th>
+                <td>{{ reservation.cityBike }}</td>
+            </tr>
+            <tr>
+                <th>E_bike</th>
+                <td>{{ reservation.eBike }}</td>
+            </tr>
+            <tr>
+                <th>Hybrid_bike</th>
+                <td>{{ reservation.hybridBike }}</td>
+            </tr>
+            <tr>
+                <th>Tandem_bike</th>
+                <td>{{ reservation.tandemBike }}</td>
+            </tr>
+            <tr>
+                <th>Touring_bike</th>
+                <td>{{ reservation.touringBike }}</td>
+            </tr>
+            <tr>
+                <th>Kids_bike</th>
+                <td>{{ reservation.kidsBike }}</td>
+            </tr>
+            <tr>
+                <th>Kids_cargo</th>
+                <td>{{ reservation.kidsCargo }}</td>
+            </tr>
+            <tr>
+                <th>Kids_child_seat</th>
+                <td>{{ reservation.kidsChildSeat }}</td>
+            </tr>
+            <tr>
+                <th>Kids_tandem</th>
+                <td>{{ reservation.kidsTandem }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('reservation_index') }}">back to list</a>
+
+    <a href="{{ path('reservation_edit', {'id': reservation.id}) }}">edit</a>
+
+    {{ include('reservation/_delete_form.html.twig') }}
+{% endblock %}

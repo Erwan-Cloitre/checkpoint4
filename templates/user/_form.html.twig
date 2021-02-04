@@ -1,15 +1,9 @@
-{% extends 'admin.html.twig' %}
-
-{% block body %}
-    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-    <h1 style=" margin-left: 27vw;margin-top: 10vw">Inscription admin</h1>
-    {{ form_start(form, {'attr':{'class': 'form_register'}}) }}
+{{ form_start(form, {'attr':{'class': 'form_register'}}) }}
     {{ form_row(form.lastname, {'attr':{'placeholder': 'Nom','class': 'row_register'}}) }}
     {{ form_row(form.firstname, {'attr':{'placeholder': 'Prénom','class': 'row_register'}}) }}
     {{ form_row(form.email, {'attr':{'placeholder': 'Adresse email','class': 'row_register'}}) }}
     {{ form_row(form.password, {'attr':{'placeholder': 'Mot de passe','class': 'row_register'}}) }}
     {{ form_row(form.roles, {'attr':{'style': 'display:none','class': 'row_register'}}) }}
-    <button style=" margin-left: 32vw" type="submit" class="btn btn-success">Inscription !</button>
-    {{ form_end(form) }}
-    </div>
-{% endblock %}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
