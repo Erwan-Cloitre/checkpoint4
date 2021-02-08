@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<div style="width: 100%; height: 35vw; padding: 5vw 0 40vw 12vw;background-color: rgb(237, 237, 237)">
+    <div>
+    <h1 style=" margin-left: 26vw;margin-top: 10vw">Contactez-nous</h1>
+    {{ form_start(contact, {'attr':{'class': 'form_register'}}) }}
+    {{ form_row(contact.Lastname, {'attr':{'placeholder': 'Nom','class': 'row_register'}}) }}
+    {{ form_row(contact.Firstname, {'attr':{'placeholder': 'Prénom','class': 'row_register'}}) }}
+    {{ form_row(contact.email, {'attr':{'placeholder': 'Adresse email','class': 'row_register'}}) }}
+    {{ form_row(contact.mobile_number, {'attr':{'placeholder': 'Numéro de téléphone','class': 'row_register'}}) }}
+    {{ form_row(contact.description, {'attr':{'placeholder': 'Description','class': 'row_register'}}) }}
+    <button style=" margin-left: 29.8vw" type="submit" class="btn btn-success">Envoie du message !</button>
+    {{ form_end(contact) }}
+    </div>
+</div>
+{% endblock %}

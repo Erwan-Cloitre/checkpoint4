@@ -25,7 +25,7 @@ security:
             form_login:
                 login_path: security_login
                 check_path: security_login
-                default_target_path: admin
+                default_target_path: admin_home
 
             logout:
                 path: app_logout
@@ -40,3 +40,5 @@ security:
     access_control:
         - { path: ^/admin, roles: ROLE_USER }
         - { path: ^/inscription, roles: ROLE_USER }
+        - { path: ^/reservation, roles: ROLE_USER }
+        - { path: ^/contact, roles: ROLE_USER }
